@@ -47,16 +47,21 @@ def format_confidence(confidence: float) -> str:
 st.markdown(
     """
     <style>
-      .stApp { background: #fffaf3; }
+      .stApp { background: #fff9f1; color: #172554; }
+      .stApp p, .stApp label, .stApp li, .stApp small,
+      .stApp [data-testid="stFileUploaderDropzoneInstructions"],
+      .stApp [data-testid="stFileUploaderDropzoneInstructions"] span {
+        color: #172554 !important;
+      }
       .hero { text-align: center; padding: 1.4rem 0 0.7rem; }
       .hero h1 { color: #9f204d; margin-bottom: 0.35rem; }
-      .hero p { color: #523a42; font-size: 1.05rem; }
+      .hero p { color: #1e3a8a; font-size: 1.05rem; }
       .result-card {
         background: #ffffff; border: 1px solid #f0ced9; border-radius: 16px;
         padding: 1.2rem 1.4rem; text-align: center; margin: 1rem 0;
       }
       .result-card h2 { color: #9f204d; margin: 0.2rem 0; }
-      .result-card p { margin: 0.2rem 0; color: #523a42; }
+      .result-card p { margin: 0.2rem 0; color: #1e3a8a; }
     </style>
     <div class="hero">
       <h1>AI or Real? 🔎</h1>
